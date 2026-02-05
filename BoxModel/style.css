@@ -1,0 +1,21 @@
+.card-produto {
+    width: 300px; /* Largura definida */
+    border: 1px solid #ccc; /* Borda */
+    padding: 15px; /* Espaçamento interno */
+    margin: 20px; /* Espaçamento externo */
+    font-family: Arial, sans-serif;
+  }
+  .card-produto img {
+    width: 100%; /* Faz a imagem ocupar a largura do card */
+    height: auto;
+  }
+
+  *, *::before, *::after {
+  box-sizing: border-box; /* Adicionando a todos os elementos */
+}
+
+/* Sem border-box (padrão - content-box): O tamanho total é:
+width (300px) + padding-left/right (15px+15px) + border-left/right (1px+1px) = 332px de largura final.
+Com border-box: O tamanho total é:
+300px fixos. O padding e a borda são "subtraídos" da área de conteúdo interno.  
+Usar box-sizing: border-box; é a melhor prática no desenvolvimento web moderno, pois facilita o cálculo do layout, garantindo que o elemento mantenha o tamanho exato definido na propriedade width. */
