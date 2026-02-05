@@ -1,0 +1,44 @@
+/* 1. Mude a cor do h1 dentro do #cabecalho para #1a5276 */
+/* 2. Mude a cor de fundo de todos os elementos com a classe .post para #f8f9fa */
+/* 3. Adicione uma borda amarela ao post com a classe .destaque */
+/* 4. Deixe o texto do parágrafo com a classe .slogan em itálico */
+/* 5. Mude a cor de todos os links para #3498db e remova o sublinhado */
+/* 6. Adicione um sublinhado vermelho quando o mouse passar sobre um link */
+/* 7. Adicione " (externo)" após o link que abre em nova aba */
+
+#cabecalho > h1 {
+    color:  #1a5276;
+}
+
+.post {
+    background: #f8f9fa;
+}
+
+.destaque {
+    border: 5px solid yellow; /* Define a borda com 5px de espessura, sólida e amarela */
+}
+
+.slogan {
+    font-style: italic;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: text-decoration-color 0.4s; /* Suaviza a transição */
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: red; /* Define a cor do sublinhado */
+}
+
+a[target="_blank"]::after {
+    content: " (externo)";
+    font-size: 0.8em; /* Opcional: diminui um pouco o tamanho do texto extra */
+    color: #73d815; /* Opcional: cor verde para o texto "externo" */
+    margin-left: 3px;
+}
+
+
+
+
